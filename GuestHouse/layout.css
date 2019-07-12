@@ -1,29 +1,38 @@
 body{
-    position: sticky;
+    position: static;
     font-family: 'Times New Roman', Times, serif;
     background-image: url("https://yia18.org/wp-content/uploads/2015/06/Pieria-Greece.jpg");
 
 }
 
-
   /*************    Header   ******************/
 .header{
     position: relative;
     text-align: center;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 8%;
+    margin-right: 8%;
     margin-bottom:  15px;
-    width: 98%;
+    width: 84%;
     height: 17%;
     float: left;
 
 }
-.header h1{
-    margin: 1px;
-    width: 98%;
-    color: bisque;
+.header img{
+    position: relative;
     float: left;
-    font-size: 37px;
+    border-radius: 50%;
+    background-color: rgba(220,250,195, 0.5);
+    width: 40%;
+
+}
+.header h1{
+    margin-top: 35px;
+    margin-right: 100px;
+    font-family: "Dubai Light", cursive;
+    width: 50%;
+    color: bisque;
+    float: right;
+    font-size: 40px;
 }
 .header h2{
     margin: 1px;
@@ -32,9 +41,7 @@ body{
     float: left;
     font-size: 28px;
 }
-.header:hover {
-    background-color: rgba(245, 228, 132, 0.226);
-}
+
 /*.header img{
     padding-top: 15px;
     padding-right: 15px;
@@ -48,14 +55,12 @@ body{
 .topnav {
     position: relative;
     border-radius: 8px;
-    width: 95%;
-    margin-left: 7%;
-    margin-right: 7%;
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
     margin-top: 40px;
     overflow: hidden;
-
-
-
+    margin-bottom: 4px;
 }
 .topnav a{
     float: left;
@@ -63,23 +68,23 @@ body{
     background-color: rgba(201, 252, 150, 0.05);
     color: rgba(248, 248, 248, 0.979);
     text-decoration: none;
-    width: 17.15%;
+    width: 20%;
     font-size: 17px;
     padding: 9px;
-    border-right: 0.5px solid rgba(39, 39, 39, 0.44);
+    border-right: 1px solid rgba(39, 39, 39, 0.44);
     text-align: center;
 }
 .topnav a:hover {
-    
+
     background-color: rgba(235, 253, 218, 0.507);
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 /*****************   Footer   *************************/
 .footer{
-    width: 85%;
-    margin-left: 7%;
-    margin-right: 7%;
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
     background-color: bisque;
     border-radius: 8px;
     margin-top: 10px;
@@ -99,11 +104,11 @@ body{
 .column-1 {
     position: relative;
     float: left; 
-    width: 85%;
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
     border: 1px solid lightskyblue;
     border-radius: 6px;
-    margin-left:  7%;
-    margin-right: 7%;
     padding: 15px;
     text-align: center;
     background-color: rgba(245, 245, 245, 0.5);
@@ -111,37 +116,44 @@ body{
 .column-1 p{
     float: left;
    /* margin-right: 205px; */
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.4;
 }
 .column-1 h1 {
-    font-size: 33px;
-}
-.column-1 img{
-    width: 350px;
-    height: 300px;
-
-}
-.slider{
-    width: 50%;
-    height: 24%;
-    display: inline-block;
-    margin: 8px auto;
-    background: url(1.jpg);
-    animation: slide 15s infinite;
-    background-size: cover;
+    font-size: 37px;
 }
 
+.mySlides {
+    height: 45%;
+    width: 70%;
+    margin-left: 15%;
+    display:none;
+}
+
+/*
 @keyframes slide{
-    25%{
+    0%{
         background: url(2.jpg);
         background-size: cover;
     }
-    50%{
+    100% {
+        background: url(2.jpg);
+        background-size: cover;
+    }
+    0%{
         background: url(3.jpg);
         background-size: cover;
     }
-    75%{
+    100%{
+        background: url(3.jpg);
+        background-size: cover;
+    }
+    0%{
+        background: url(4.jpg);
+        background-size: cover;
+    }
+
+    100%{
         background: url(4.jpg);
         background-size: cover;
     }
@@ -150,16 +162,16 @@ body{
         background-size: cover;
     }
 }
-
+*/
 
 /**************        Price Page          ***************/
 
 .price {
     position: relative;
     float: left; 
-    width: 85%;
-    margin-left: 7%;
-    margin-right: 7%;
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
     border-radius: 6px;
     border: 0.5px solid grey;
     padding: 15px;
@@ -205,10 +217,10 @@ body{
 
  /******************      Gallery      *************************/
 .gallery-1{
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 8%;
+    margin-right: 8%;
     float: left;
-    width: 80%;
+    width: 84%;
     padding-left: 45px;
     background-color: rgba(177, 177, 177, 0.11)
 }
@@ -231,10 +243,20 @@ body{
  /***************** MEDIA QUERIES *******************/
 
 @media screen and (max-width: 600px) {
-    .header, .header h1, .header h2, .footer, .topnav a, .column-1, .column-1 p, .content,
+    .header, , .footer, .column-1, .column-1 p, .content,
     .column-1 h1, .column-1 img, .slider,
     .price, .price h3, .price table, .price table th, .price table tr, .price table td,
-    .gallery, .gallery-1, .gallery img {
-        width: 95%;
+    .gallery, .gallery-1, .gallery img , .header img {
+        width: 84%
+    }
+}
+@media screen and (max-width: 599px) {
+    .topnav, .topnav a {
+        width: 92%
+    }
+}
+@media screen and (max-width: 599px) {
+    .header h1 {
+        width: 50%
     }
 }
